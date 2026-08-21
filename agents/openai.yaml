@@ -1,0 +1,12 @@
+interface:
+  display_name: "Codex 指挥 OpenCode"
+  short_description: "把范围明确的代码修改交给受限 OpenCode 并独立验收"
+  default_prompt: "使用 $codex-opencode-orchestrator 将这个范围明确的代码修改交给 OpenCode，并独立验收结果。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "codex-opencode"
+      description: "本地受限 OpenCode 编排、干跑与证据查询工具"
+      transport: "stdio"
+policy:
+  allow_implicit_invocation: true
