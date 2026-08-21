@@ -1,0 +1,21 @@
+{
+  "task": "修复 greet 函数：去掉姓名首尾空白，并在姓名为空、全空白、null 或 undefined 时使用 stranger。",
+  "scope": [
+    "src/greet.js",
+    "相关测试（仅在确有必要时）"
+  ],
+  "constraints": [
+    "保留现有导出形式",
+    "不要提交或推送 Git",
+    "不要修改无关文件"
+  ],
+  "acceptance": [
+    "greet(' Ada ') 返回 Hello, Ada!",
+    "greet('   ') 返回 Hello, stranger!",
+    "greet(null) 和 greet(undefined) 返回 Hello, stranger!"
+  ],
+  "verifyCommands": [
+    "npm test"
+  ],
+  "maxRounds": 2
+}
